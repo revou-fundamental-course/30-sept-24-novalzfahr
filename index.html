@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Konversi Suhu</h1>
+            <div class="section-text">
+                <h2>Masukkan suhu derajat Celcius (°C) atau Fahrenheit (°F) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil.</h2>
+            </div>
+        </div>
+        <form>
+            <div class="input-suhu">
+                <label for="input">Masukkan suhu</label>
+                <input type="number" id="input" placeholder="Masukkan suhu">
+            </div>
+            <div class="buttons">
+                <button type="button" id="convertToFahrenheit">Konversi ke Fahrenheit (°F)</button>
+                <button type="button" id="convertToCelsius">Konversi ke Celcius (°C)</button>
+                <button type="button" id="reset">Reset</button>
+            </div>
+        </form>
+        <div class="output">
+            <h3>Hasil Konversi:</h3>
+            <textarea id="output" readonly></textarea>
+        </div>
+        <div class="calculation">
+            <h3>Cara Kalkulasi:</h3>
+            <textarea id="calculation" readonly></textarea>
+        </div>
+        <div class="calculation-formula">
+            <h3>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h3>
+            <p>Suhu <em>S</em> dalam derajat Fahrenheit (°F) sama dengan suhu <em>S</em> dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+            <p>
+                <em>S</em><sub>(°F)</sub> = (<em>S</em><sub>(°C)</sub> × 9/5) + 32
+            </p>
+            <p>atau</p>
+            <p>
+                <em>S</em><sub>(°F)</sub> = (<em>S</em><sub>(°C)</sub> × 1.8) + 32
+            </p>
+        </div>
+        
+    </div>
+</body>
+</html>
